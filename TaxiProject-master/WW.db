@@ -1,0 +1,11 @@
+CREATE DATABASE jsMysql CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE jsMysql;
+
+CREATE TABLE wordbank(
+  word varchar(5),
+  worddate date
+  PRIMARY KEY (word)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+INSERT INTO wordbank (word, worddate) VALUES
+('smash','2023-04-05');
